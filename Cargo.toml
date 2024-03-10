@@ -1,3 +1,4 @@
+workspace = { members = ["board-plugin"] }
 [package]
 name = "Mine_sweeper"
 version = "0.1.0"
@@ -6,3 +7,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bevy = "0.13.0"
+bevy-inspector-egui = {version = "0.23.4", optional = true}
+board-plugin = {path = "board-plugin", optional = true}
+
+[features]
+debug = ["board-plugin/debug", "bevy-inspector-egui"]
+[lib]
+name = "main_lib"

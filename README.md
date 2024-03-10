@@ -1,2 +1,3 @@
 # Bevy-Minesweeper
-learn how to use rust 0.13.0 to create a game
+rust学习项目--扫雷
+https://dev.to/qongzi/bevy-minesweeper-part-1-534c
